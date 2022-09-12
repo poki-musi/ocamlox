@@ -1,0 +1,23 @@
+fun clos() {
+    var x = 0;
+    fun wrapper() {
+        fun incr() {
+            var y = x;
+            x = y + 1;
+            return y;
+        }
+        return incr;
+    }
+    return wrapper();
+}
+
+for(var i = 0; i < 2; i = i + 1) {
+    print("");
+
+    var incr = clos();
+
+    print(incr);
+    for(var i = 0; i < 10; i = i + 1) {
+        print(incr());
+    }
+}

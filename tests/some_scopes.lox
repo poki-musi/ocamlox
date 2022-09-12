@@ -1,0 +1,7 @@
+var x = 1;
+var y = 1;
+{
+    var x = x;
+}
+y;
+x;

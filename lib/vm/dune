@@ -1,0 +1,4 @@
+(library
+ (name vm)
+ (libraries front batteries fmt)
+ (preprocess (pps ppx_deriving.show ppx_deriving.enum)))

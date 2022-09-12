@@ -1,0 +1,20 @@
+class Thing {
+  init(x) {
+    this.x = x;
+  }
+
+  getCallback() {
+    fun localFunction() {
+      print(this);
+      print(this.x);
+    }
+
+    return localFunction;
+  }
+}
+
+var thing = Thing(1);
+var callback = thing.getCallback();
+callback();
+print(thing.init(2));
+callback();

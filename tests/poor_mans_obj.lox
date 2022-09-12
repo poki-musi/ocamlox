@@ -1,0 +1,20 @@
+fun hai() {
+    var x = 0;
+    fun main(arg) {
+        if (arg == "incr") {
+            x = x + 1;
+        } else if (arg == "decr") {
+            x = x - 1;
+        } else if (arg == "main") {
+            print(x);
+        }
+    }
+
+    return main;
+}
+
+var x = hai();
+x("incr");
+x("main");
+x("decr");
+x("main");

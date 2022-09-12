@@ -1,0 +1,12 @@
+fun fib(x) {
+    if(x <= 1)
+        return x;
+    else
+        return fib(x-1) + fib(x-2);
+}
+
+var temp = fib(0);
+for(var i = 0; temp < 10000; i = i + 1) {
+    print(temp);
+    temp = fib(i);
+}

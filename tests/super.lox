@@ -1,0 +1,14 @@
+class Foo {
+    henlo() {
+        print("from foo");
+    }
+}
+
+class Bar < Foo {
+    henlo() {
+        print("from bar");
+        super.henlo();
+    }
+}
+
+Bar().henlo();

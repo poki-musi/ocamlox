@@ -1,0 +1,3 @@
+(executable
+  (name unit_tests)
+  (libraries lib))

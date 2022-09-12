@@ -1,0 +1,9 @@
+var b;
+{
+    fun showA() {
+        print(showA);
+    }
+    showA();
+    b = showA;
+}
+b();

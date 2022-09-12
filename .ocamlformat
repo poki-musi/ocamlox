@@ -1,0 +1,9 @@
+break-cases=nested
+break-fun-decl=fit-or-vertical
+cases-matching-exp-indent=compact
+type-decl=sparse
+let-and=sparse
+break-infix-before-func
+break-infix=fit-or-vertical
+if-then-else=keyword-first
+break-sequences

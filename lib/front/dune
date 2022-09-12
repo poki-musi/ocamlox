@@ -1,0 +1,8 @@
+(library
+ (name front)
+ (libraries batteries fmt)
+ (preprocess (pps ppx_deriving.show ppx_deriving.enum)))
+
+(ocamllex lexer)
+(menhir
+  (modules parser))
